@@ -1,12 +1,12 @@
 # LeaderAI Giornale
 
-Le notizie che ti interessano, ogni mattina in una pagina. Un giornale personale in italiano, con titoli, foto ufficiale quando disponibile e fonti cliccabili. Lo leggi a video; se vuoi puoi stamparlo.
+Le notizie che ti interessano, ogni mattina in una pagina. Escludi gli argomenti che non ti servono e indica quali notizie ti sono state utili: la selezione successiva usa queste preferenze. Un giornale personale in italiano, con titoli, foto ufficiale quando disponibile e fonti cliccabili. Lo leggi a video; se vuoi puoi stamparlo.
 
 La skill è gratuita. Usa Claude Code o Codex già collegato al tuo piano: la generazione consuma i limiti del piano, senza nuove chiavi API. Richiede Python 3.10 o successivo e una connessione internet.
 
 ## Per te, una riga
 
-> Installa la skill gratuita da https://github.com/salChiarenza/leaderai-giornale, proponimi interessi e fonti dalle preferenze pertinenti che conosci già, chiedimi solo ciò che manca e prepara il mio primo giornale PDF da leggere a video. Poi aiutami a riceverlo ogni giorno.
+> Installa la skill gratuita da https://github.com/salChiarenza/leaderai-giornale, proponimi interessi e fonti dalle preferenze pertinenti che conosci già, chiedimi solo ciò che manca e prepara il mio primo giornale PDF da leggere a video. Poi aiutami a riceverlo ogni giorno e ad adattarlo quando ti dico cosa mi interessa o quali notizie mi sono state utili.
 
 [Scarica lo ZIP](https://github.com/salChiarenza/leaderai-giornale/archive/refs/heads/main.zip) · [Guarda una prova con immagine](examples/giornale-esempio-2026-10-29.pdf)
 
@@ -59,6 +59,25 @@ Trovi PDF, notizie JSON e ricevuta in `PERCORSO DATI/editions/AAAA-MM-GG/`. Una 
 PYTHON_VENV scripts/giornale.py status --data-dir "PERCORSO DATI"
 PYTHON_VENV scripts/giornale.py schedule --plan --data-dir "PERCORSO DATI"
 ```
+
+### Adattare il giornale con una frase
+
+Dì alla tua AI «questo argomento non mi interessa», «la notizia 3 mi è stata utile» oppure «questa non mi è servita». La skill registra la preferenza solo per te e la usa nella prossima ricerca. Puoi riammettere un argomento o annullare un voto. I voti non diventano esclusioni automatiche di un fornitore, non cambiano le fonti e non addestrano il modello.
+
+```bash
+PYTHON_VENV scripts/giornale.py feedback --data-dir "PERCORSO DATI" --exclude "ARGOMENTO"
+PYTHON_VENV scripts/giornale.py feedback --data-dir "PERCORSO DATI" --include "ARGOMENTO"
+PYTHON_VENV scripts/giornale.py feedback --data-dir "PERCORSO DATI" --article 3 --vote useful
+PYTHON_VENV scripts/giornale.py feedback --data-dir "PERCORSO DATI" --article 3 --vote not-useful
+PYTHON_VENV scripts/giornale.py feedback --data-dir "PERCORSO DATI" --article 3 --clear-vote
+PYTHON_VENV scripts/giornale.py feedback --data-dir "PERCORSO DATI" --show
+```
+
+La configurazione locale `config.json` è l'unica fonte delle preferenze. Conserva al massimo 100 voti, uno per data e URL; la prossima ricerca usa gli ultimi 30. Ripetere lo stesso voto è idempotente. I comandi concorrenti aggiornano la configurazione sotto lock e con sostituzione atomica.
+
+Il numero accanto alla sezione identifica la notizia nell'edizione. Per votare un numero precedente, la tua AI usa `--edition AAAA-MM-GG:RIFERIMENTO` leggendo il riferimento dai metadati del PDF (Subject) o dalla ricevuta. Senza `--edition` vale l'ultimo numero riuscito. Gli snapshot `edition-RIFERIMENTO.json` sono immutabili; se nella stessa data esistono più versioni, la data da sola viene rifiutata. Così un riordino non sposta il voto su una notizia diversa.
+
+L'esclusione confronta parole o frasi intere in sezione, titolo, sottotitolo e corpo, normalizzando maiuscole e separatori. Non confronta il dominio della fonte: escludere un prodotto lascia ammissibili notizie dello stesso editore su altro argomento. Una violazione ferma il numero con un errore esplicito; non elimina articoli di nascosto e non inventa notizie per completare la pagina. `render --data-dir "PERCORSO DATI"` applica le stesse esclusioni anche a un JSON locale. Gli esempi pubblici restano neutrali e storici, indipendenti dai gusti di chi usa la skill.
 
 ### Nota breve, audit completo e ricerca parziale
 

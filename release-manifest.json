@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "files": [
     ".gitignore",
     "SKILL.md",
@@ -14,6 +14,7 @@
     "examples/giornale-demo.pdf",
     "tests/test_giornale.py",
     "examples/edition-esempio-2026-10-29.json",
-    "examples/giornale-esempio-2026-10-29.pdf"
+    "examples/giornale-esempio-2026-10-29.pdf",
+    "tests/test_feedback.py"
   ]
 }
