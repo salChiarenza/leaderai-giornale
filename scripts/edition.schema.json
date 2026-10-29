@@ -1,0 +1,92 @@
+{
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ok",
+        "no_updates"
+      ]
+    },
+    "window_hours": {
+      "type": "integer"
+    },
+    "note": {
+      "type": "string",
+      "maxLength": 220,
+      "description": "Nota breve per la pagina: finestra e limiti essenziali. I dettagli completi vanno in audit."
+    },
+    "articles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "section": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "subtitle": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string"
+          },
+          "source_name": {
+            "type": "string"
+          },
+          "source_url": {
+            "type": "string"
+          },
+          "published_date": {
+            "type": "string"
+          },
+          "image_url": {
+            "type": "string"
+          },
+          "image_credit": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "section",
+          "title",
+          "subtitle",
+          "body",
+          "source_name",
+          "source_url",
+          "published_date",
+          "image_url",
+          "image_credit"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "coverage": {
+      "type": "string",
+      "enum": [
+        "complete",
+        "partial",
+        "blocked"
+      ]
+    },
+    "audit": {
+      "type": "string",
+      "description": "Dettagli completi di provenienza, fonti escluse, errori HTTP e limiti; conservati nel JSON."
+    }
+  },
+  "required": [
+    "date",
+    "status",
+    "window_hours",
+    "note",
+    "articles",
+    "coverage",
+    "audit"
+  ],
+  "additionalProperties": false
+}

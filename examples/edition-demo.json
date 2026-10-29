@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-29",
+  "status": "demo",
+  "window_hours": 48,
+  "note": "Esempi inventati: prova grafica, non notizie attuali.",
+  "articles": [
+    {
+      "section": "RICERCA",
+      "title": "Un laboratorio apre i suoi dati",
+      "subtitle": "Un esempio di notizia, con contesto e una fonte cliccabile.",
+      "body": "Un laboratorio immaginario pubblica un archivio di osservazioni sul lavoro di gruppo. I dati sono disponibili in un formato leggibile e accompagnati da una descrizione del metodo. Questo testo è inventato: serve a mostrare come una notizia lunga occupa le due colonne della pagina.\n\nIl racconto distingue ciò che è stato osservato dalle conclusioni proposte dagli autori. Per leggere un risultato di ricerca conviene controllare il campione, il periodo di raccolta e i limiti dichiarati. Una media da sola non spiega le differenze tra i gruppi.\n\nPer chi lavora in un piccolo team, una domanda utile riguarda il proprio processo: quali passaggi si ripetono, chi deve dare una risposta e dove si aspetta più tempo? Il giornale offre un punto di partenza per capire un cambiamento. Ogni scelta concreta richiede i fatti del proprio caso.",
+      "source_name": "Esempio dimostrativo",
+      "source_url": "https://example.com/demo/1",
+      "published_date": "2026-10-29",
+      "image_url": "",
+      "image_credit": ""
+    },
+    {
+      "section": "CITTÀ",
+      "title": "Una biblioteca prova nuovi orari",
+      "subtitle": "Un servizio cambia: prima di partire si legge la comunicazione.",
+      "body": "Una biblioteca immaginaria annuncia una prova degli orari serali. Il progetto dura poche settimane e permette di raccogliere osservazioni da chi studia o lavora durante il giorno. Anche questa è una notizia dimostrativa, senza un evento reale alle spalle.\n\nLa comunicazione distingue il periodo di prova dagli orari permanenti. Indica quali sale restano aperte e quali servizi sono disponibili. Per una persona che vuole partecipare, la fonte diretta è più utile di un titolo ripreso sui social.\n\nQuando un servizio cambia, data, luogo e condizioni di accesso contano quanto l’annuncio. Questi dettagli rendono una notizia utilizzabile, senza trasformarla in una promessa.",
+      "source_name": "Esempio dimostrativo",
+      "source_url": "https://example.com/demo/2",
+      "published_date": "2026-10-29",
+      "image_url": "",
+      "image_credit": ""
+    },
+    {
+      "section": "ENERGIA",
+      "title": "Misurare prima di cambiare",
+      "subtitle": "",
+      "body": "Una cooperativa immaginaria confronta i consumi di due edifici. La prova grafica mostra una notizia breve: un fatto, il suo limite e una lettura pratica. I valori del consumo dipendono anche dal clima, dagli orari e dal numero di persone presenti.\n\nUn confronto utile rende visibili queste condizioni e spiega come sono state raccolte le misure. Chi legge può così capire se il risultato è vicino al proprio caso. Il testo non dà suggerimenti di investimento né previsioni sul risparmio.",
+      "source_name": "Esempio dimostrativo",
+      "source_url": "https://example.com/demo/3",
+      "published_date": "2026-10-29",
+      "image_url": "",
+      "image_credit": ""
+    },
+    {
+      "section": "CULTURA",
+      "title": "Un archivio diventa consultabile",
+      "subtitle": "",
+      "body": "Un museo immaginario rende consultabili le schede di una piccola collezione. Il materiale comprende date, autori e descrizioni. Ogni scheda mantiene il collegamento al documento originale. La notizia è un esempio inventato per questa pagina.\n\nPer chi studia un tema, avere una fonte diretta permette di distinguere il catalogo dalla sua interpretazione. Restano da controllare i diritti delle immagini e le condizioni di riutilizzo. La disponibilità online non equivale al permesso di ripubblicare ogni elemento.",
+      "source_name": "Esempio dimostrativo",
+      "source_url": "https://example.com/demo/4",
+      "published_date": "2026-10-29",
+      "image_url": "",
+      "image_credit": ""
+    },
+    {
+      "section": "LAVORO",
+      "title": "Un gruppo racconta la sua prova",
+      "subtitle": "",
+      "body": "Un gruppo di professionisti immaginario descrive come ha organizzato una settimana di lavoro condiviso. La prova comprende poche persone e non dimostra che il metodo funzioni ovunque. Qui serve a completare la pagina dimostrativa.\n\nIl resoconto separa le osservazioni dalle opinioni dei partecipanti. Descrive anche i passaggi rimasti difficili. Per valutare un nuovo metodo conviene cercare entrambe le cose: il risultato ottenuto e le condizioni in cui è stato possibile. Le fonti del giornale portano sempre al punto di partenza.",
+      "source_name": "Esempio dimostrativo",
+      "source_url": "https://example.com/demo/5",
+      "published_date": "2026-10-29",
+      "image_url": "",
+      "image_credit": ""
+    }
+  ],
+  "coverage": "complete",
+  "audit": "Esempio grafico: testi inventati."
+}

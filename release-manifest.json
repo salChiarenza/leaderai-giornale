@@ -1,0 +1,19 @@
+{
+  "version": "0.1.0",
+  "files": [
+    ".gitignore",
+    "SKILL.md",
+    "README.md",
+    "LICENSE",
+    "requirements.txt",
+    "release-manifest.json",
+    "scripts/giornale.py",
+    "scripts/edition.schema.json",
+    "assets/leaderai-logo.png",
+    "examples/edition-demo.json",
+    "examples/giornale-demo.pdf",
+    "tests/test_giornale.py",
+    "examples/edition-esempio-2026-10-29.json",
+    "examples/giornale-esempio-2026-10-29.pdf"
+  ]
+}

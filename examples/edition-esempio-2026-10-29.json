@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-29",
+  "status": "ok",
+  "window_hours": 48,
+  "note": "ESEMPIO DEL 29/10/2026. Notizie del 28/10/2026: pagina conservata per mostrare impaginazione e screenshot, non edizione corrente.",
+  "articles": [
+    {
+      "section": "Lavoro quotidiano",
+      "title": "Copilot lavora nelle app del computer",
+      "subtitle": "Anteprima pubblica su Mac e Windows, con autorizzazione",
+      "body": "GitHub ha annunciato il 28 ottobre una funzione che permette a Copilot di operare nelle applicazioni del computer. Secondo la pagina ufficiale, può leggere contenuti, fare clic, inserire o modificare testo e passare fra programmi. L’esempio proposto riguarda la preparazione di una nota spese, anche attraverso applicazioni prive di collegamenti diretti con l’assistente.\n\nLa disponibilità dichiarata è un’anteprima pubblica su macOS e Windows. La funzione va attivata nelle impostazioni e Copilot chiede approvazione prima di controllare un’applicazione. Su Mac servono inoltre i permessi di Accessibilità e Registrazione schermo. Le organizzazioni possono disabilitarla tramite le proprie impostazioni di gestione.\n\nPer una piccola impresa, la lettura pratica è interessante: alcune attività distribuite fra più finestre potrebbero essere affrontate descrivendo il risultato desiderato. Nella formazione questo apre esempi concreti su passaggi amministrativi ripetitivi. L’annuncio, però, descrive capacità e condizioni di accesso: non dimostra affidabilità su ogni programma né quantifica il tempo risparmiato nel lavoro reale.",
+      "source_name": "GitHub",
+      "source_url": "https://github.blog/changelog/2026-10-28-github-copilot-app-universe-releases/",
+      "published_date": "2026-10-28",
+      "image_url": "https://github.com/user-attachments/assets/37b3573f-d42f-439f-a136-9613293cf984",
+      "image_credit": "GitHub Copilot app, vista Projects. Screenshot ufficiale GitHub."
+    },
+    {
+      "section": "Costi",
+      "title": "Crediti API per alcuni abbonati ChatGPT",
+      "subtitle": "Beneficio per Pro e Business, con requisiti specifici",
+      "body": "Nelle note del 28 ottobre, OpenAI annuncia crediti promozionali API per abbonamenti Pro e Business idonei. Le API permettono di usare i modelli dentro strumenti e automazioni propri. Il beneficio riguarda un’organizzazione API collegata e resta separato dai crediti e dai limiti d’uso di ChatGPT.\n\nLa guida collegata richiede un abbonamento idoneo attivo da almeno sette giorni. Plus è escluso. Per Business sono previsti importi legati ai posti pagati, con un tetto mensile di 500 dollari; i crediti inutilizzati scadono secondo il ciclo applicabile.\n\nPer chi forma piccole imprese, può ridurre il costo di una sperimentazione già prevista. L’idoneità dell’abbonamento, tuttavia, non equivale all’avvenuta assegnazione: servono attivazione e verifica del saldo.",
+      "source_name": "OpenAI",
+      "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "published_date": "2026-10-28",
+      "image_url": "",
+      "image_credit": ""
+    },
+    {
+      "section": "Materiali",
+      "title": "Immagini generate direttamente in GitHub Copilot",
+      "subtitle": "Anteprima pubblica e consumo di crediti separato",
+      "body": "GitHub introduce generazione e modifica di immagini tramite richieste in linguaggio naturale. Copilot mostra il risultato nella conversazione e lo salva nel progetto; lo strumento utilizza GPT Image 2.5 Flare.\n\nÈ un’anteprima pubblica per Copilot Pro, Pro+, Business ed Enterprise. Le immagini consumano crediti in aggiunta al modello della conversazione; gli amministratori possono disabilitare la funzione.\n\nLa lettura pratica riguarda chi prepara materiali digitali già dentro Copilot: un’illustrazione può nascere nello stesso ambiente. L’annuncio non fornisce un prezzo fisso per ogni immagine.",
+      "source_name": "GitHub",
+      "source_url": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot/",
+      "published_date": "2026-10-28",
+      "image_url": "",
+      "image_credit": ""
+    },
+    {
+      "section": "Organizzazione",
+      "title": "Automazioni Copilot condivise con il gruppo",
+      "subtitle": "Distribuzione graduale sui piani a pagamento indicati",
+      "body": "GitHub avvia la distribuzione delle automazioni condivise: istruzioni, eventi di avvio e strumenti possono essere gestiti insieme dal gruppo. Le automazioni appartengono al repository, lo spazio che raccoglie il progetto, e continuano a funzionare se il creatore lascia il gruppo.\n\nI crediti vengono addebitati al proprietario del repository. La disponibilità procede gradualmente per Pro, Pro+, Max, Business ed Enterprise, con un’abilitazione amministrativa richiesta nelle organizzazioni.\n\nPer una piccola squadra già su GitHub, il valore pratico è rendere le attività ricorrenti meno dipendenti dall’account di una persona.",
+      "source_name": "GitHub",
+      "source_url": "https://github.blog/changelog/2026-10-28-build-shared-workflows-for-your-team-with-copilot-automations/",
+      "published_date": "2026-10-28",
+      "image_url": "",
+      "image_credit": ""
+    },
+    {
+      "section": "Integrazioni",
+      "title": "ServiceNow e ChatGPT ampliano il collegamento",
+      "subtitle": "Plugin disponibile, altre funzioni attese nel 2027",
+      "body": "OpenAI e ServiceNow annunciano un ampliamento della collaborazione per collegare richieste informatiche, dati e azioni aziendali a ChatGPT. Il plugin ServiceNow MCP è dichiarato disponibile nel marketplace OpenAI; capacità potenziate sono attese entro fine 2026.\n\nAltri elementi hanno scadenze successive: voce nel primo trimestre 2027, sicurezza inizialmente ad accesso anticipato da gennaio e integrazione Codex nella fabbrica di applicazioni durante il 2027.\n\nPer le piccole imprese interessa soprattutto chi usa già ServiceNow. La lettura pratica è distinguere il collegamento disponibile oggi dalle funzionalità ancora programmate.",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/openai-servicenow-partnership-expansion/",
+      "published_date": "2026-10-28",
+      "image_url": "",
+      "image_credit": ""
+    }
+  ],
+  "coverage": "complete",
+  "audit": "Esempio storico del 29/10/2026, preparato dalle fonti primarie collegate negli articoli. Screenshot ufficiale GitHub aggiunto localmente per mostrare il layout con immagine; JSON originale del motore conservato nelle prove private."
+}

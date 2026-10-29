@@ -1,0 +1,9 @@
+.venv/
+local/
+__pycache__/
+*.pyc
+config.json
+editions/
+*.log
+.DS_Store
+.install.json
